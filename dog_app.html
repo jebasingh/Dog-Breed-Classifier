@@ -13134,7 +13134,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13173,7 +13173,7 @@ There are 8351 total dog images.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>                
@@ -13247,7 +13247,7 @@ There are 8351 total dog images.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">face_detector</span><span class="p">(</span><span class="n">img_path</span><span class="p">):</span>
@@ -13264,7 +13264,7 @@ There are 8351 total dog images.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tqdm</span> <span class="k">import</span> <span class="n">tqdm</span>
@@ -13288,7 +13288,7 @@ There are 8351 total dog images.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;detect face in human_files: </span><span class="si">{}</span><span class="s2"> / </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">face_detection_test</span><span class="p">(</span><span class="n">human_files_short</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">face_detection_test</span><span class="p">(</span><span class="n">human_files_short</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span>
@@ -13321,7 +13321,7 @@ detect face in dog_files: 17 / 100
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
@@ -13357,7 +13357,7 @@ detect face in dog_files: 17 / 100
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># define VGG16 model</span>
@@ -13372,6 +13372,25 @@ detect face in dog_files: 17 / 100
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Downloading: &#34;https://download.pytorch.org/models/vgg16-397923af.pth&#34; to /root/.torch/models/vgg16-397923af.pth
+100%|██████████| 553433881/553433881 [00:05&lt;00:00, 101229856.01it/s]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13383,7 +13402,7 @@ detect face in dog_files: 17 / 100
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
@@ -13408,7 +13427,7 @@ detect face in dog_files: 17 / 100
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">VGG16_predict</span><span class="p">(</span><span class="n">img_path</span><span class="p">):</span>
@@ -13440,7 +13459,7 @@ detect face in dog_files: 17 / 100
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># predict dog using ImageNet class</span>
@@ -13457,7 +13476,7 @@ detect face in dog_files: 17 / 100
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[52]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -13474,7 +13493,7 @@ detect face in dog_files: 17 / 100
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### returns &quot;True&quot; if a dog is detected in the image stored at img_path</span>
@@ -13491,7 +13510,7 @@ detect face in dog_files: 17 / 100
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">dog_detector</span><span class="p">(</span><span class="n">dog_files_short</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
@@ -13536,7 +13555,7 @@ False
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### TODO: Test the performance of the dog_detector function</span>
@@ -13556,7 +13575,7 @@ False
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;detect a dog in human_files: </span><span class="si">{}</span><span class="s2"> / </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dog_detector_test</span><span class="p">(</span><span class="n">human_files_short</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">dog_detector_test</span><span class="p">(</span><span class="n">human_files_short</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span>
@@ -13578,7 +13597,7 @@ False
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>detect a dog in human_files: 0 / 100
-detect a dog in dog_files: 96 / 100
+detect a dog in dog_files: 98 / 100
 </pre>
 </div>
 </div>
@@ -13596,7 +13615,7 @@ detect a dog in dog_files: 96 / 100
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13632,7 +13651,7 @@ detect a dog in dog_files: 96 / 100
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">standard_normalization</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Normalize</span><span class="p">(</span><span class="n">mean</span><span class="o">=</span><span class="p">[</span><span class="mf">0.485</span><span class="p">,</span> <span class="mf">0.456</span><span class="p">,</span> <span class="mf">0.406</span><span class="p">],</span>
@@ -13646,7 +13665,7 @@ detect a dog in dog_files: 96 / 100
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_transforms</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">([</span><span class="n">transforms</span><span class="o">.</span><span class="n">RandomResizedCrop</span><span class="p">(</span><span class="mi">224</span><span class="p">),</span>
@@ -13677,7 +13696,7 @@ detect a dog in dog_files: 96 / 100
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_data</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">ImageFolder</span><span class="p">(</span><span class="n">train_dir</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">data_transforms</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">])</span>
@@ -13692,7 +13711,7 @@ detect a dog in dog_files: 96 / 100
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_loader</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">DataLoader</span><span class="p">(</span><span class="n">train_data</span><span class="p">,</span>
@@ -13752,7 +13771,7 @@ I have applied RandomResizedCrop &amp; RandomHorizontalFlip to just <em>train_da
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">ImageFile</span>
@@ -13768,7 +13787,7 @@ I have applied RandomResizedCrop &amp; RandomHorizontalFlip to just <em>train_da
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
@@ -13891,7 +13910,7 @@ Fully-connected layer is placed and then, 2nd fully-connected layer is intended 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
@@ -13918,7 +13937,7 @@ Fully-connected layer is placed and then, 2nd fully-connected layer is intended 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="n">n_epochs</span><span class="p">,</span> <span class="n">loaders</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">criterion</span><span class="p">,</span> <span class="n">use_cuda</span><span class="p">,</span> <span class="n">save_path</span><span class="p">,</span> <span class="n">last_validation_loss</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -13995,7 +14014,7 @@ Fully-connected layer is placed and then, 2nd fully-connected layer is intended 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_scratch</span> <span class="o">=</span> <span class="n">train</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="n">loaders_scratch</span><span class="p">,</span> <span class="n">model_scratch</span><span class="p">,</span> <span class="n">optimizer_scratch</span><span class="p">,</span> 
@@ -14016,94 +14035,95 @@ Fully-connected layer is placed and then, 2nd fully-connected layer is intended 
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch 1, Batch 1 loss: 4.895938
-Epoch 1, Batch 101 loss: 4.887933
-Epoch 1, Batch 201 loss: 4.883942
-Epoch 1, Batch 301 loss: 4.871223
-Epoch: 1 	Training Loss: 4.868002 	Validation Loss: 4.786813
-Validation loss decreased (inf --&gt; 4.786813).  Saving model ...
-Epoch 2, Batch 1 loss: 4.681616
-Epoch 2, Batch 101 loss: 4.799386
-Epoch 2, Batch 201 loss: 4.786740
-Epoch 2, Batch 301 loss: 4.773957
-Epoch: 2 	Training Loss: 4.769746 	Validation Loss: 4.641078
-Validation loss decreased (4.786813 --&gt; 4.641078).  Saving model ...
-Epoch 3, Batch 1 loss: 4.657387
-Epoch 3, Batch 101 loss: 4.679651
-Epoch 3, Batch 201 loss: 4.664014
-Epoch 3, Batch 301 loss: 4.652036
-Epoch: 3 	Training Loss: 4.647187 	Validation Loss: 4.507424
-Validation loss decreased (4.641078 --&gt; 4.507424).  Saving model ...
-Epoch 4, Batch 1 loss: 4.719120
-Epoch 4, Batch 101 loss: 4.589705
-Epoch 4, Batch 201 loss: 4.582193
-Epoch 4, Batch 301 loss: 4.580395
-Epoch: 4 	Training Loss: 4.572852 	Validation Loss: 4.414491
-Validation loss decreased (4.507424 --&gt; 4.414491).  Saving model ...
-Epoch 5, Batch 1 loss: 4.431922
-Epoch 5, Batch 101 loss: 4.488385
-Epoch 5, Batch 201 loss: 4.509883
-Epoch 5, Batch 301 loss: 4.498074
-Epoch: 5 	Training Loss: 4.502463 	Validation Loss: 4.351656
-Validation loss decreased (4.414491 --&gt; 4.351656).  Saving model ...
-Epoch 6, Batch 1 loss: 4.303584
-Epoch 6, Batch 101 loss: 4.455468
-Epoch 6, Batch 201 loss: 4.469032
-Epoch 6, Batch 301 loss: 4.455448
-Epoch: 6 	Training Loss: 4.448590 	Validation Loss: 4.303839
-Validation loss decreased (4.351656 --&gt; 4.303839).  Saving model ...
-Epoch 7, Batch 1 loss: 4.302498
-Epoch 7, Batch 101 loss: 4.396658
-Epoch 7, Batch 201 loss: 4.405290
-Epoch 7, Batch 301 loss: 4.399985
-Epoch: 7 	Training Loss: 4.397130 	Validation Loss: 4.134810
-Validation loss decreased (4.303839 --&gt; 4.134810).  Saving model ...
-Epoch 8, Batch 1 loss: 4.207819
-Epoch 8, Batch 101 loss: 4.335128
-Epoch 8, Batch 201 loss: 4.326158
-Epoch 8, Batch 301 loss: 4.332811
-Epoch: 8 	Training Loss: 4.328800 	Validation Loss: 4.147648
-Epoch 9, Batch 1 loss: 4.401714
-Epoch 9, Batch 101 loss: 4.288784
-Epoch 9, Batch 201 loss: 4.297770
-Epoch 9, Batch 301 loss: 4.285041
-Epoch: 9 	Training Loss: 4.282079 	Validation Loss: 4.063777
-Validation loss decreased (4.134810 --&gt; 4.063777).  Saving model ...
-Epoch 10, Batch 1 loss: 4.282253
-Epoch 10, Batch 101 loss: 4.204443
-Epoch 10, Batch 201 loss: 4.213251
-Epoch 10, Batch 301 loss: 4.216439
-Epoch: 10 	Training Loss: 4.214283 	Validation Loss: 4.008217
-Validation loss decreased (4.063777 --&gt; 4.008217).  Saving model ...
-Epoch 11, Batch 1 loss: 3.904176
-Epoch 11, Batch 101 loss: 4.131243
-Epoch 11, Batch 201 loss: 4.164369
-Epoch 11, Batch 301 loss: 4.157337
-Epoch: 11 	Training Loss: 4.157134 	Validation Loss: 3.959172
-Validation loss decreased (4.008217 --&gt; 3.959172).  Saving model ...
-Epoch 12, Batch 1 loss: 4.638649
-Epoch 12, Batch 101 loss: 4.111821
-Epoch 12, Batch 201 loss: 4.103799
-Epoch 12, Batch 301 loss: 4.093918
-Epoch: 12 	Training Loss: 4.100870 	Validation Loss: 3.898073
-Validation loss decreased (3.959172 --&gt; 3.898073).  Saving model ...
-Epoch 13, Batch 1 loss: 3.794059
-Epoch 13, Batch 101 loss: 4.081541
-Epoch 13, Batch 201 loss: 4.052792
-Epoch 13, Batch 301 loss: 4.058078
-Epoch: 13 	Training Loss: 4.064646 	Validation Loss: 3.813967
-Validation loss decreased (3.898073 --&gt; 3.813967).  Saving model ...
-Epoch 14, Batch 1 loss: 4.036694
-Epoch 14, Batch 101 loss: 3.995256
-Epoch 14, Batch 201 loss: 4.022324
-Epoch 14, Batch 301 loss: 4.006362
-Epoch: 14 	Training Loss: 4.007617 	Validation Loss: 3.823058
-Epoch 15, Batch 1 loss: 4.194034
-Epoch 15, Batch 101 loss: 3.982824
-Epoch 15, Batch 201 loss: 3.978537
-Epoch 15, Batch 301 loss: 3.968528
-Epoch: 15 	Training Loss: 3.964341 	Validation Loss: 3.721210
-Validation loss decreased (3.813967 --&gt; 3.721210).  Saving model ...
+<pre>Epoch 1, Batch 1 loss: 4.901374
+Epoch 1, Batch 101 loss: 4.885672
+Epoch 1, Batch 201 loss: 4.882186
+Epoch 1, Batch 301 loss: 4.874456
+Epoch: 1 	Training Loss: 4.872548 	Validation Loss: 4.811379
+Validation loss decreased (inf --&gt; 4.811379).  Saving model ...
+Epoch 2, Batch 1 loss: 4.870431
+Epoch 2, Batch 101 loss: 4.809306
+Epoch 2, Batch 201 loss: 4.797215
+Epoch 2, Batch 301 loss: 4.771785
+Epoch: 2 	Training Loss: 4.762776 	Validation Loss: 4.574028
+Validation loss decreased (4.811379 --&gt; 4.574028).  Saving model ...
+Epoch 3, Batch 1 loss: 4.620950
+Epoch 3, Batch 101 loss: 4.645286
+Epoch 3, Batch 201 loss: 4.636191
+Epoch 3, Batch 301 loss: 4.630994
+Epoch: 3 	Training Loss: 4.632899 	Validation Loss: 4.485194
+Validation loss decreased (4.574028 --&gt; 4.485194).  Saving model ...
+Epoch 4, Batch 1 loss: 4.736398
+Epoch 4, Batch 101 loss: 4.586836
+Epoch 4, Batch 201 loss: 4.569522
+Epoch 4, Batch 301 loss: 4.561316
+Epoch: 4 	Training Loss: 4.555470 	Validation Loss: 4.355818
+Validation loss decreased (4.485194 --&gt; 4.355818).  Saving model ...
+Epoch 5, Batch 1 loss: 4.431654
+Epoch 5, Batch 101 loss: 4.508278
+Epoch 5, Batch 201 loss: 4.517031
+Epoch 5, Batch 301 loss: 4.496354
+Epoch: 5 	Training Loss: 4.496203 	Validation Loss: 4.317652
+Validation loss decreased (4.355818 --&gt; 4.317652).  Saving model ...
+Epoch 6, Batch 1 loss: 4.443496
+Epoch 6, Batch 101 loss: 4.432156
+Epoch 6, Batch 201 loss: 4.442143
+Epoch 6, Batch 301 loss: 4.429692
+Epoch: 6 	Training Loss: 4.429334 	Validation Loss: 4.257745
+Validation loss decreased (4.317652 --&gt; 4.257745).  Saving model ...
+Epoch 7, Batch 1 loss: 3.949525
+Epoch 7, Batch 101 loss: 4.360548
+Epoch 7, Batch 201 loss: 4.370396
+Epoch 7, Batch 301 loss: 4.363742
+Epoch: 7 	Training Loss: 4.357333 	Validation Loss: 4.228252
+Validation loss decreased (4.257745 --&gt; 4.228252).  Saving model ...
+Epoch 8, Batch 1 loss: 4.435137
+Epoch 8, Batch 101 loss: 4.298654
+Epoch 8, Batch 201 loss: 4.310511
+Epoch 8, Batch 301 loss: 4.312219
+Epoch: 8 	Training Loss: 4.308012 	Validation Loss: 4.066393
+Validation loss decreased (4.228252 --&gt; 4.066393).  Saving model ...
+Epoch 9, Batch 1 loss: 4.186728
+Epoch 9, Batch 101 loss: 4.258275
+Epoch 9, Batch 201 loss: 4.260540
+Epoch 9, Batch 301 loss: 4.253498
+Epoch: 9 	Training Loss: 4.254957 	Validation Loss: 4.080611
+Epoch 10, Batch 1 loss: 4.405839
+Epoch 10, Batch 101 loss: 4.182232
+Epoch 10, Batch 201 loss: 4.204222
+Epoch 10, Batch 301 loss: 4.209648
+Epoch: 10 	Training Loss: 4.207624 	Validation Loss: 3.955718
+Validation loss decreased (4.066393 --&gt; 3.955718).  Saving model ...
+Epoch 11, Batch 1 loss: 4.295347
+Epoch 11, Batch 101 loss: 4.154678
+Epoch 11, Batch 201 loss: 4.151144
+Epoch 11, Batch 301 loss: 4.146136
+Epoch: 11 	Training Loss: 4.147256 	Validation Loss: 3.923318
+Validation loss decreased (3.955718 --&gt; 3.923318).  Saving model ...
+Epoch 12, Batch 1 loss: 4.229059
+Epoch 12, Batch 101 loss: 4.085808
+Epoch 12, Batch 201 loss: 4.095423
+Epoch 12, Batch 301 loss: 4.101702
+Epoch: 12 	Training Loss: 4.103168 	Validation Loss: 3.860181
+Validation loss decreased (3.923318 --&gt; 3.860181).  Saving model ...
+Epoch 13, Batch 1 loss: 3.803554
+Epoch 13, Batch 101 loss: 3.991051
+Epoch 13, Batch 201 loss: 4.024312
+Epoch 13, Batch 301 loss: 4.022318
+Epoch: 13 	Training Loss: 4.022666 	Validation Loss: 3.813805
+Validation loss decreased (3.860181 --&gt; 3.813805).  Saving model ...
+Epoch 14, Batch 1 loss: 3.371737
+Epoch 14, Batch 101 loss: 3.968580
+Epoch 14, Batch 201 loss: 3.999731
+Epoch 14, Batch 301 loss: 4.003614
+Epoch: 14 	Training Loss: 4.004774 	Validation Loss: 3.764109
+Validation loss decreased (3.813805 --&gt; 3.764109).  Saving model ...
+Epoch 15, Batch 1 loss: 3.643533
+Epoch 15, Batch 101 loss: 3.938612
+Epoch 15, Batch 201 loss: 3.976179
+Epoch 15, Batch 301 loss: 3.965874
+Epoch: 15 	Training Loss: 3.977317 	Validation Loss: 3.704396
+Validation loss decreased (3.764109 --&gt; 3.704396).  Saving model ...
 </pre>
 </div>
 </div>
@@ -14114,7 +14134,7 @@ Validation loss decreased (3.813967 --&gt; 3.721210).  Saving model ...
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_scratch</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;model_scratch.pt&#39;</span><span class="p">))</span>
@@ -14135,7 +14155,7 @@ Validation loss decreased (3.813967 --&gt; 3.721210).  Saving model ...
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">loaders</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">criterion</span><span class="p">,</span> <span class="n">use_cuda</span><span class="p">):</span>
@@ -14184,10 +14204,10 @@ Validation loss decreased (3.813967 --&gt; 3.721210).  Saving model ...
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Test Loss: 3.920981
+<pre>Test Loss: 3.813244
 
 
-Test Accuracy: 12% (105/836)
+Test Accuracy: 13% (109/836)
 </pre>
 </div>
 </div>
@@ -14210,7 +14230,7 @@ Test Accuracy: 12% (105/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">loaders_transfer</span> <span class="o">=</span> <span class="n">loaders_scratch</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -14223,7 +14243,7 @@ Test Accuracy: 12% (105/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torchvision.models</span> <span class="k">as</span> <span class="nn">models</span>
@@ -14237,10 +14257,29 @@ Test Accuracy: 12% (105/836)
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Downloading: &#34;https://download.pytorch.org/models/resnet50-19c8e357.pth&#34; to /root/.torch/models/resnet50-19c8e357.pth
+100%|██████████| 102502400/102502400 [00:01&lt;00:00, 96317772.88it/s]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">model_transfer</span><span class="o">.</span><span class="n">parameters</span><span class="p">():</span>
@@ -14254,7 +14293,7 @@ Test Accuracy: 12% (105/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_transfer</span><span class="o">.</span><span class="n">fc</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">2048</span><span class="p">,</span> <span class="mi">133</span><span class="p">,</span> <span class="n">bias</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -14267,7 +14306,7 @@ Test Accuracy: 12% (105/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fc_parameters</span> <span class="o">=</span> <span class="n">model_transfer</span><span class="o">.</span><span class="n">fc</span><span class="o">.</span><span class="n">parameters</span><span class="p">()</span>
@@ -14280,7 +14319,7 @@ Test Accuracy: 12% (105/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">fc_parameters</span><span class="p">:</span>
@@ -14294,7 +14333,7 @@ Test Accuracy: 12% (105/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_transfer</span>
@@ -14310,7 +14349,7 @@ Test Accuracy: 12% (105/836)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[76]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -14502,7 +14541,7 @@ Test Accuracy: 12% (105/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">use_cuda</span><span class="p">:</span>
@@ -14542,7 +14581,7 @@ Test Accuracy: 12% (105/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">criterion_transfer</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span><span class="p">()</span>
@@ -14564,7 +14603,7 @@ Test Accuracy: 12% (105/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="n">n_epochs</span><span class="p">,</span> <span class="n">loaders</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">criterion</span><span class="p">,</span> <span class="n">use_cuda</span><span class="p">,</span> <span class="n">save_path</span><span class="p">):</span>
@@ -14640,7 +14679,7 @@ Test Accuracy: 12% (105/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="n">loaders_transfer</span><span class="p">,</span> <span class="n">model_transfer</span><span class="p">,</span> <span class="n">optimizer_transfer</span><span class="p">,</span> <span class="n">criterion_transfer</span><span class="p">,</span> <span class="n">use_cuda</span><span class="p">,</span> <span class="s1">&#39;model_transfer.pt&#39;</span><span class="p">)</span>
@@ -14660,133 +14699,133 @@ Test Accuracy: 12% (105/836)
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch 1, Batch 1 loss: 4.700284
-Epoch 1, Batch 101 loss: 4.662316
-Epoch 1, Batch 201 loss: 4.637314
-Epoch 1, Batch 301 loss: 4.612133
-Epoch: 1 	Training Loss: 4.603701 	Validation Loss: 4.400377
-Validation loss decreased (inf --&gt; 4.400377).  Saving model ...
-Epoch 2, Batch 1 loss: 4.588403
-Epoch 2, Batch 101 loss: 4.458944
-Epoch 2, Batch 201 loss: 4.446971
-Epoch 2, Batch 301 loss: 4.412374
-Epoch: 2 	Training Loss: 4.404458 	Validation Loss: 4.145499
-Validation loss decreased (4.400377 --&gt; 4.145499).  Saving model ...
-Epoch 3, Batch 1 loss: 4.297412
-Epoch 3, Batch 101 loss: 4.283401
-Epoch 3, Batch 201 loss: 4.263351
-Epoch 3, Batch 301 loss: 4.239913
-Epoch: 3 	Training Loss: 4.228631 	Validation Loss: 3.933276
-Validation loss decreased (4.145499 --&gt; 3.933276).  Saving model ...
-Epoch 4, Batch 1 loss: 4.096944
-Epoch 4, Batch 101 loss: 4.093338
-Epoch 4, Batch 201 loss: 4.068743
-Epoch 4, Batch 301 loss: 4.048478
-Epoch: 4 	Training Loss: 4.041887 	Validation Loss: 3.717220
-Validation loss decreased (3.933276 --&gt; 3.717220).  Saving model ...
-Epoch 5, Batch 1 loss: 3.742868
-Epoch 5, Batch 101 loss: 3.924368
-Epoch 5, Batch 201 loss: 3.909509
-Epoch 5, Batch 301 loss: 3.884606
-Epoch: 5 	Training Loss: 3.879035 	Validation Loss: 3.518224
-Validation loss decreased (3.717220 --&gt; 3.518224).  Saving model ...
-Epoch 6, Batch 1 loss: 3.907010
-Epoch 6, Batch 101 loss: 3.763492
-Epoch 6, Batch 201 loss: 3.743310
-Epoch 6, Batch 301 loss: 3.720548
-Epoch: 6 	Training Loss: 3.714907 	Validation Loss: 3.326594
-Validation loss decreased (3.518224 --&gt; 3.326594).  Saving model ...
-Epoch 7, Batch 1 loss: 3.432474
-Epoch 7, Batch 101 loss: 3.621989
-Epoch 7, Batch 201 loss: 3.594127
-Epoch 7, Batch 301 loss: 3.578146
-Epoch: 7 	Training Loss: 3.575046 	Validation Loss: 3.131322
-Validation loss decreased (3.326594 --&gt; 3.131322).  Saving model ...
-Epoch 8, Batch 1 loss: 3.484133
-Epoch 8, Batch 101 loss: 3.448502
-Epoch 8, Batch 201 loss: 3.443040
-Epoch 8, Batch 301 loss: 3.433513
-Epoch: 8 	Training Loss: 3.428614 	Validation Loss: 2.956086
-Validation loss decreased (3.131322 --&gt; 2.956086).  Saving model ...
-Epoch 9, Batch 1 loss: 2.902711
-Epoch 9, Batch 101 loss: 3.340553
-Epoch 9, Batch 201 loss: 3.309376
-Epoch 9, Batch 301 loss: 3.304944
-Epoch: 9 	Training Loss: 3.298059 	Validation Loss: 2.820174
-Validation loss decreased (2.956086 --&gt; 2.820174).  Saving model ...
-Epoch 10, Batch 1 loss: 3.146205
-Epoch 10, Batch 101 loss: 3.210847
-Epoch 10, Batch 201 loss: 3.195210
-Epoch 10, Batch 301 loss: 3.177020
-Epoch: 10 	Training Loss: 3.174979 	Validation Loss: 2.649997
-Validation loss decreased (2.820174 --&gt; 2.649997).  Saving model ...
-Epoch 11, Batch 1 loss: 2.835375
-Epoch 11, Batch 101 loss: 3.107500
-Epoch 11, Batch 201 loss: 3.074275
-Epoch 11, Batch 301 loss: 3.067368
-Epoch: 11 	Training Loss: 3.066556 	Validation Loss: 2.548593
-Validation loss decreased (2.649997 --&gt; 2.548593).  Saving model ...
-Epoch 12, Batch 1 loss: 3.363798
-Epoch 12, Batch 101 loss: 2.991649
-Epoch 12, Batch 201 loss: 2.972709
-Epoch 12, Batch 301 loss: 2.958669
-Epoch: 12 	Training Loss: 2.948072 	Validation Loss: 2.405317
-Validation loss decreased (2.548593 --&gt; 2.405317).  Saving model ...
-Epoch 13, Batch 1 loss: 3.471380
-Epoch 13, Batch 101 loss: 2.895099
-Epoch 13, Batch 201 loss: 2.872294
-Epoch 13, Batch 301 loss: 2.863488
-Epoch: 13 	Training Loss: 2.861938 	Validation Loss: 2.311509
-Validation loss decreased (2.405317 --&gt; 2.311509).  Saving model ...
-Epoch 14, Batch 1 loss: 2.657058
-Epoch 14, Batch 101 loss: 2.775615
-Epoch 14, Batch 201 loss: 2.767754
-Epoch 14, Batch 301 loss: 2.747220
-Epoch: 14 	Training Loss: 2.738466 	Validation Loss: 2.176315
-Validation loss decreased (2.311509 --&gt; 2.176315).  Saving model ...
-Epoch 15, Batch 1 loss: 2.486261
-Epoch 15, Batch 101 loss: 2.659862
-Epoch 15, Batch 201 loss: 2.670713
-Epoch 15, Batch 301 loss: 2.670232
-Epoch: 15 	Training Loss: 2.661157 	Validation Loss: 2.095690
-Validation loss decreased (2.176315 --&gt; 2.095690).  Saving model ...
-Epoch 16, Batch 1 loss: 2.222215
-Epoch 16, Batch 101 loss: 2.604438
-Epoch 16, Batch 201 loss: 2.597772
-Epoch 16, Batch 301 loss: 2.586233
-Epoch: 16 	Training Loss: 2.583303 	Validation Loss: 1.972377
-Validation loss decreased (2.095690 --&gt; 1.972377).  Saving model ...
-Epoch 17, Batch 1 loss: 2.755211
-Epoch 17, Batch 101 loss: 2.488601
-Epoch 17, Batch 201 loss: 2.491252
-Epoch 17, Batch 301 loss: 2.485863
-Epoch: 17 	Training Loss: 2.482199 	Validation Loss: 1.912951
-Validation loss decreased (1.972377 --&gt; 1.912951).  Saving model ...
-Epoch 18, Batch 1 loss: 2.704539
-Epoch 18, Batch 101 loss: 2.394285
-Epoch 18, Batch 201 loss: 2.415036
-Epoch 18, Batch 301 loss: 2.407459
-Epoch: 18 	Training Loss: 2.405540 	Validation Loss: 1.824279
-Validation loss decreased (1.912951 --&gt; 1.824279).  Saving model ...
-Epoch 19, Batch 1 loss: 2.153380
-Epoch 19, Batch 101 loss: 2.369645
-Epoch 19, Batch 201 loss: 2.375227
-Epoch 19, Batch 301 loss: 2.358155
-Epoch: 19 	Training Loss: 2.361843 	Validation Loss: 1.752416
-Validation loss decreased (1.824279 --&gt; 1.752416).  Saving model ...
-Epoch 20, Batch 1 loss: 2.236128
-Epoch 20, Batch 101 loss: 2.304354
-Epoch 20, Batch 201 loss: 2.306085
-Epoch 20, Batch 301 loss: 2.295284
-Epoch: 20 	Training Loss: 2.293202 	Validation Loss: 1.662538
-Validation loss decreased (1.752416 --&gt; 1.662538).  Saving model ...
+<pre>Epoch 1, Batch 1 loss: 4.910942
+Epoch 1, Batch 101 loss: 4.877628
+Epoch 1, Batch 201 loss: 4.841585
+Epoch 1, Batch 301 loss: 4.809129
+Epoch: 1 	Training Loss: 4.797914 	Validation Loss: 4.627488
+Validation loss decreased (inf --&gt; 4.627488).  Saving model ...
+Epoch 2, Batch 1 loss: 4.762252
+Epoch 2, Batch 101 loss: 4.638417
+Epoch 2, Batch 201 loss: 4.615982
+Epoch 2, Batch 301 loss: 4.590374
+Epoch: 2 	Training Loss: 4.579180 	Validation Loss: 4.367388
+Validation loss decreased (4.627488 --&gt; 4.367388).  Saving model ...
+Epoch 3, Batch 1 loss: 4.367435
+Epoch 3, Batch 101 loss: 4.427081
+Epoch 3, Batch 201 loss: 4.413123
+Epoch 3, Batch 301 loss: 4.391636
+Epoch: 3 	Training Loss: 4.382849 	Validation Loss: 4.143806
+Validation loss decreased (4.367388 --&gt; 4.143806).  Saving model ...
+Epoch 4, Batch 1 loss: 4.494774
+Epoch 4, Batch 101 loss: 4.268342
+Epoch 4, Batch 201 loss: 4.240988
+Epoch 4, Batch 301 loss: 4.214212
+Epoch: 4 	Training Loss: 4.203753 	Validation Loss: 3.907347
+Validation loss decreased (4.143806 --&gt; 3.907347).  Saving model ...
+Epoch 5, Batch 1 loss: 4.021956
+Epoch 5, Batch 101 loss: 4.079799
+Epoch 5, Batch 201 loss: 4.060768
+Epoch 5, Batch 301 loss: 4.034387
+Epoch: 5 	Training Loss: 4.027469 	Validation Loss: 3.704186
+Validation loss decreased (3.907347 --&gt; 3.704186).  Saving model ...
+Epoch 6, Batch 1 loss: 3.900655
+Epoch 6, Batch 101 loss: 3.903466
+Epoch 6, Batch 201 loss: 3.883688
+Epoch 6, Batch 301 loss: 3.864728
+Epoch: 6 	Training Loss: 3.862029 	Validation Loss: 3.481447
+Validation loss decreased (3.704186 --&gt; 3.481447).  Saving model ...
+Epoch 7, Batch 1 loss: 3.763803
+Epoch 7, Batch 101 loss: 3.754035
+Epoch 7, Batch 201 loss: 3.730390
+Epoch 7, Batch 301 loss: 3.705627
+Epoch: 7 	Training Loss: 3.698334 	Validation Loss: 3.295780
+Validation loss decreased (3.481447 --&gt; 3.295780).  Saving model ...
+Epoch 8, Batch 1 loss: 3.608881
+Epoch 8, Batch 101 loss: 3.583839
+Epoch 8, Batch 201 loss: 3.576922
+Epoch 8, Batch 301 loss: 3.559958
+Epoch: 8 	Training Loss: 3.550900 	Validation Loss: 3.109041
+Validation loss decreased (3.295780 --&gt; 3.109041).  Saving model ...
+Epoch 9, Batch 1 loss: 3.909409
+Epoch 9, Batch 101 loss: 3.452424
+Epoch 9, Batch 201 loss: 3.431309
+Epoch 9, Batch 301 loss: 3.424668
+Epoch: 9 	Training Loss: 3.416647 	Validation Loss: 2.958200
+Validation loss decreased (3.109041 --&gt; 2.958200).  Saving model ...
+Epoch 10, Batch 1 loss: 3.323943
+Epoch 10, Batch 101 loss: 3.324266
+Epoch 10, Batch 201 loss: 3.312121
+Epoch 10, Batch 301 loss: 3.286185
+Epoch: 10 	Training Loss: 3.277383 	Validation Loss: 2.806310
+Validation loss decreased (2.958200 --&gt; 2.806310).  Saving model ...
+Epoch 11, Batch 1 loss: 3.293597
+Epoch 11, Batch 101 loss: 3.181386
+Epoch 11, Batch 201 loss: 3.158922
+Epoch 11, Batch 301 loss: 3.152145
+Epoch: 11 	Training Loss: 3.154224 	Validation Loss: 2.669534
+Validation loss decreased (2.806310 --&gt; 2.669534).  Saving model ...
+Epoch 12, Batch 1 loss: 2.967934
+Epoch 12, Batch 101 loss: 3.063327
+Epoch 12, Batch 201 loss: 3.040002
+Epoch 12, Batch 301 loss: 3.036226
+Epoch: 12 	Training Loss: 3.031766 	Validation Loss: 2.521258
+Validation loss decreased (2.669534 --&gt; 2.521258).  Saving model ...
+Epoch 13, Batch 1 loss: 2.852552
+Epoch 13, Batch 101 loss: 2.949551
+Epoch 13, Batch 201 loss: 2.939707
+Epoch 13, Batch 301 loss: 2.916732
+Epoch: 13 	Training Loss: 2.914737 	Validation Loss: 2.377614
+Validation loss decreased (2.521258 --&gt; 2.377614).  Saving model ...
+Epoch 14, Batch 1 loss: 3.261099
+Epoch 14, Batch 101 loss: 2.857832
+Epoch 14, Batch 201 loss: 2.851095
+Epoch 14, Batch 301 loss: 2.834601
+Epoch: 14 	Training Loss: 2.828679 	Validation Loss: 2.266117
+Validation loss decreased (2.377614 --&gt; 2.266117).  Saving model ...
+Epoch 15, Batch 1 loss: 2.862571
+Epoch 15, Batch 101 loss: 2.775491
+Epoch 15, Batch 201 loss: 2.751162
+Epoch 15, Batch 301 loss: 2.728420
+Epoch: 15 	Training Loss: 2.727031 	Validation Loss: 2.138307
+Validation loss decreased (2.266117 --&gt; 2.138307).  Saving model ...
+Epoch 16, Batch 1 loss: 2.605196
+Epoch 16, Batch 101 loss: 2.669995
+Epoch 16, Batch 201 loss: 2.665685
+Epoch 16, Batch 301 loss: 2.657464
+Epoch: 16 	Training Loss: 2.650631 	Validation Loss: 2.050212
+Validation loss decreased (2.138307 --&gt; 2.050212).  Saving model ...
+Epoch 17, Batch 1 loss: 2.699495
+Epoch 17, Batch 101 loss: 2.628721
+Epoch 17, Batch 201 loss: 2.602638
+Epoch 17, Batch 301 loss: 2.570004
+Epoch: 17 	Training Loss: 2.568034 	Validation Loss: 1.965761
+Validation loss decreased (2.050212 --&gt; 1.965761).  Saving model ...
+Epoch 18, Batch 1 loss: 2.905727
+Epoch 18, Batch 101 loss: 2.544151
+Epoch 18, Batch 201 loss: 2.506384
+Epoch 18, Batch 301 loss: 2.485291
+Epoch: 18 	Training Loss: 2.487838 	Validation Loss: 1.877941
+Validation loss decreased (1.965761 --&gt; 1.877941).  Saving model ...
+Epoch 19, Batch 1 loss: 2.298698
+Epoch 19, Batch 101 loss: 2.456895
+Epoch 19, Batch 201 loss: 2.443735
+Epoch 19, Batch 301 loss: 2.413739
+Epoch: 19 	Training Loss: 2.408813 	Validation Loss: 1.830086
+Validation loss decreased (1.877941 --&gt; 1.830086).  Saving model ...
+Epoch 20, Batch 1 loss: 2.047091
+Epoch 20, Batch 101 loss: 2.345791
+Epoch 20, Batch 201 loss: 2.356558
+Epoch 20, Batch 301 loss: 2.336790
+Epoch: 20 	Training Loss: 2.334320 	Validation Loss: 1.721236
+Validation loss decreased (1.830086 --&gt; 1.721236).  Saving model ...
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[67]:</div>
+    <div class="prompt output_prompt">Out[41]:</div>
 
 
 
@@ -14978,7 +15017,7 @@ Validation loss decreased (1.752416 --&gt; 1.662538).  Saving model ...
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_transfer</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;model_transfer.pt&#39;</span><span class="p">))</span>
@@ -14991,7 +15030,7 @@ Validation loss decreased (1.752416 --&gt; 1.662538).  Saving model ...
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test</span><span class="p">(</span><span class="n">loaders_transfer</span><span class="p">,</span> <span class="n">model_transfer</span><span class="p">,</span> <span class="n">criterion_transfer</span><span class="p">,</span> <span class="n">use_cuda</span><span class="p">)</span>
@@ -15011,10 +15050,10 @@ Validation loss decreased (1.752416 --&gt; 1.662538).  Saving model ...
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Test Loss: 4.940165
+<pre>Test Loss: 1.783174
 
 
-Test Accuracy:  0% ( 8/836)
+Test Accuracy: 74% (621/836)
 </pre>
 </div>
 </div>
@@ -15033,7 +15072,7 @@ Test Accuracy:  0% ( 8/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">class_names</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">loaders_transfer</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dataset</span><span class="o">.</span><span class="n">classes</span><span class="p">]</span>
@@ -15046,7 +15085,7 @@ Test Accuracy:  0% ( 8/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">loaders_transfer</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dataset</span><span class="o">.</span><span class="n">classes</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
@@ -15062,7 +15101,7 @@ Test Accuracy:  0% ( 8/836)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[80]:</div>
+    <div class="prompt output_prompt">Out[45]:</div>
 
 
 
@@ -15088,7 +15127,7 @@ Test Accuracy:  0% ( 8/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">class_names</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
@@ -15104,7 +15143,7 @@ Test Accuracy:  0% ( 8/836)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[81]:</div>
+    <div class="prompt output_prompt">Out[46]:</div>
 
 
 
@@ -15130,7 +15169,7 @@ Test Accuracy:  0% ( 8/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
@@ -15154,7 +15193,7 @@ Test Accuracy:  0% ( 8/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">predict_breed_transfer</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">class_names</span><span class="p">,</span> <span class="n">img_path</span><span class="p">):</span>
@@ -15173,7 +15212,7 @@ Test Accuracy:  0% ( 8/836)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">img_file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;./images&#39;</span><span class="p">):</span>
@@ -15196,16 +15235,16 @@ Test Accuracy:  0% ( 8/836)
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>image_file_name: ./images/Welsh_springer_spaniel_08203.jpg, 	 predition breed: German shepherd dog
-image_file_name: ./images/sample_human_output.png, 	 predition breed: Clumber spaniel
-image_file_name: ./images/Labrador_retriever_06457.jpg, 	 predition breed: Newfoundland
-image_file_name: ./images/Curly-coated_retriever_03896.jpg, 	 predition breed: Lhasa apso
-image_file_name: ./images/sample_cnn.png, 	 predition breed: Clumber spaniel
-image_file_name: ./images/Brittany_02625.jpg, 	 predition breed: Belgian malinois
-image_file_name: ./images/Labrador_retriever_06449.jpg, 	 predition breed: Chinese crested
-image_file_name: ./images/American_water_spaniel_00648.jpg, 	 predition breed: Belgian malinois
-image_file_name: ./images/sample_dog_output.png, 	 predition breed: Icelandic sheepdog
-image_file_name: ./images/Labrador_retriever_06455.jpg, 	 predition breed: Belgian malinois
+<pre>image_file_name: ./images/Welsh_springer_spaniel_08203.jpg, 	 predition breed: Welsh springer spaniel
+image_file_name: ./images/sample_human_output.png, 	 predition breed: Dogue de bordeaux
+image_file_name: ./images/Labrador_retriever_06457.jpg, 	 predition breed: Labrador retriever
+image_file_name: ./images/Curly-coated_retriever_03896.jpg, 	 predition breed: Curly-coated retriever
+image_file_name: ./images/sample_cnn.png, 	 predition breed: Pomeranian
+image_file_name: ./images/Brittany_02625.jpg, 	 predition breed: Brittany
+image_file_name: ./images/Labrador_retriever_06449.jpg, 	 predition breed: Flat-coated retriever
+image_file_name: ./images/American_water_spaniel_00648.jpg, 	 predition breed: Curly-coated retriever
+image_file_name: ./images/sample_dog_output.png, 	 predition breed: Greyhound
+image_file_name: ./images/Labrador_retriever_06455.jpg, 	 predition breed: Chesapeake bay retriever
 </pre>
 </div>
 </div>
@@ -15216,7 +15255,7 @@ image_file_name: ./images/Labrador_retriever_06455.jpg, 	 predition breed: Belgi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_app</span><span class="p">(</span><span class="n">img_path</span><span class="p">):</span>
@@ -15241,7 +15280,7 @@ image_file_name: ./images/Labrador_retriever_06455.jpg, 	 predition breed: Belgi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">img_file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;./images&#39;</span><span class="p">):</span>
@@ -15279,7 +15318,7 @@ image_file_name: ./images/Labrador_retriever_06455.jpg, 	 predition breed: Belgi
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dogs Detected!
-It looks like a German shepherd dog
+It looks like a Welsh springer spaniel
 </pre>
 </div>
 </div>
@@ -15306,7 +15345,7 @@ It looks like a German shepherd dog
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hello, human!
-If you were a dog..You may look like a Clumber spaniel
+If you were a dog..You may look like a Dogue de bordeaux
 </pre>
 </div>
 </div>
@@ -15333,7 +15372,7 @@ If you were a dog..You may look like a Clumber spaniel
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dogs Detected!
-It looks like a Newfoundland
+It looks like a Labrador retriever
 </pre>
 </div>
 </div>
@@ -15360,7 +15399,7 @@ It looks like a Newfoundland
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dogs Detected!
-It looks like a Lhasa apso
+It looks like a Curly-coated retriever
 </pre>
 </div>
 </div>
@@ -15413,7 +15452,7 @@ It looks like a Lhasa apso
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dogs Detected!
-It looks like a Belgian malinois
+It looks like a Brittany
 </pre>
 </div>
 </div>
@@ -15440,7 +15479,7 @@ It looks like a Belgian malinois
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dogs Detected!
-It looks like a Chinese crested
+It looks like a Flat-coated retriever
 </pre>
 </div>
 </div>
@@ -15467,7 +15506,7 @@ It looks like a Chinese crested
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dogs Detected!
-It looks like a Belgian malinois
+It looks like a Curly-coated retriever
 </pre>
 </div>
 </div>
@@ -15494,7 +15533,7 @@ It looks like a Belgian malinois
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dogs Detected!
-It looks like a Icelandic sheepdog
+It looks like a Greyhound
 </pre>
 </div>
 </div>
@@ -15521,7 +15560,7 @@ It looks like a Icelandic sheepdog
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dogs Detected!
-It looks like a Belgian malinois
+It looks like a Chesapeake bay retriever
 </pre>
 </div>
 </div>
@@ -15560,7 +15599,7 @@ It looks like a Belgian malinois
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_human_files</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;./images/American_water_spaniel_00648.jpg&#39;</span> <span class="p">]</span>
@@ -15574,7 +15613,7 @@ It looks like a Belgian malinois
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">my_human_files</span><span class="p">,</span> <span class="n">my_dog_files</span><span class="p">)):</span>
@@ -15611,7 +15650,7 @@ It looks like a Belgian malinois
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dogs Detected!
-It looks like a Belgian malinois
+It looks like a Curly-coated retriever
 </pre>
 </div>
 </div>
@@ -15638,7 +15677,7 @@ It looks like a Belgian malinois
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dogs Detected!
-It looks like a Chinese crested
+It looks like a Flat-coated retriever
 </pre>
 </div>
 </div>
